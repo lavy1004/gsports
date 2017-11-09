@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> g-sports_01 </title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+   
+  <style type="text/css">
+	
+	body{
+		background:url(<img src="img/gsports.png" width="414" height="90" alt="sports" />) 0 0;
+	}
+	#content{
+		overflow:hidden;
+	}
+	
+	#lnb{
+		overflow:hidden;
+	}
+
+	#lnb ul{
+		float:right;
+		margin:20px 0 20px;
+	}
+	#lnb ul li{
+		float:left;
+	}
+	#lnb ul li a{
+	display:block;
+	padding:3px 8px;
+	color:#555;
+	font-weight:bold;
+	font-size:15px;
+	border-right:1px solid #ccc;
+	}
+
+	#lnb ul li:last-child a{
+	border-right:none;
+	}
+
+	#lnb ul li a:hover{
+		color:#bbb;
+	}
+
+	#top{
+		overflow:hidden;
+	}
+
+	#top h1{
+		font-size:60px;
+		text-align:center;
+		color:#3aa6e7;
+	}
+	.text h2{
+	color:#54c2c5;
+	font-size:40px;
+	}
+	.text{
+		float:left;
+		width:35%;
+		margin:100px 0 0 100px;
+		font-size:20px;
+	}
+
+	.text p{
+		margin-top:40px;
+		text-align:justify;
+	}
+	.video{
+		margin:100px 100px 0 50px; 
+		width:40%;
+		float:right;
+	}
+
+	.video p{
+			text-align:center;
+	}
+	#middle{
+		margin-top:50px;
+		position:relative;
+	}
+
+	#middle h2{
+	color:#54c2c5;
+	font-size:40px;
+	}
+	#middle ul li span{
+		font-size:20px;
+	}
+
+	#middle ul figure{
+	width:100%;
+	}
+
+	#middle ul figure img{
+	width:50%;
+	height:auto;
+	margin-left:300px;
+	}
+
+	#middle h2{
+		padding-left:110px;
+	}
+
+	#middle ul{
+		padding-left:110px;
+		
+	}
+
+	#middle ul li{
+		margin:30px 0;
+	}
+
+	span.check{
+		width:30px;
+		background:url("img/pc/sub_01/check.png") center no-repeat;
+		text-indent:-9999px;
+		height:30px;
+		display:block;
+		position:absolute;
+		left:70px;
+	}
+
+
+	#middle ul p{
+		text-align:center;
+		margin:0 auto;
+		margin-top:30px;
+		font-size:20px;
+	}
+
+	#bottom ul{
+		overflow:hidden;
+		margin:40px 0;
+	}
+
+	#bottom ul li{
+		float:left;
+		width:32%;
+		text-align:center;
+	}
+
+	#bottom ul li span{
+	display:block;
+	}
+
+	.b_box{
+		margin-top:100px;
+		direction:rtl;
+		}
+
+	.b_box ul li{
+		float:left;
+		width:32%;
+		position:relative;
+		height:800px;
+	}
+	.big_txt{
+		float:right;
+		font-size:18px;
+		display:block;
+		padding-bottom:10px;
+		border-bottom:7px solid #b1c3e2;
+	}
+	.b_box{
+	border-top: 10px solid #000;
+    border-bottom: 10px solid navy;
+    height: 800px;
+}
+	.animate span.title{
+		display:block;
+		margin-top:120px;
+		margin-bottom:50px;
+		font-size:14px;
+	}
+	.animate p{
+		margin-top:30px;
+		font-size:14px;
+	}
+	.comani img{
+		left:-40px;
+	}
+
+	.b_box ul li:nth-child(1){
+		padding-right:10px;
+	}
+	.b_box ul li:nth-child(1) .big_txt{
+		position:absolute;
+		top:20px;
+		font-size:50px;
+		color:navy;
+	}
+	.b_box ul li:nth-child(2){
+		background:#bbb url("img/pc/main/box_bg.png") center ;
+		border-right:7px solid #ddd;
+		border-left:7px solid #ddd;
+	}
+	.b_box ul li:nth-child(2) .big_txt{
+		position:absolute;
+		top:100px;
+		left:40%;
+		font-size:30px;
+	}
+	
+	.funnybox{
+		box-sizing:border-box;
+		height:400px;
+		background:#3a70a8 center no-repeat;
+		position:absolute;
+		top:200px;
+		right:120px;
+		box-shadow:0 20px 20px 0  rgba(0,0,0,0.8);
+	}
+	.funnybox p{
+		padding-top:50px;
+		height:300px;
+		font-size:20px;
+		line-height:40px;
+		color:#f5e258;
+		text-align:center;
+		text-shadow:2px 2px 4px black;
+	}
+
+	.b_box ul li:nth-child(3) .big_txt{
+		position:absolute;
+		top:130px;
+		right:10px;
+		font-size:30px;
+	}
+	.simpleimg{
+		box-sizing:border-box;
+		height:400px;
+		position:absolute;
+		top:200px;
+		right:10px;
+	}
+	.simplebox{
+		box-sizing:border-box;
+		height:50px;
+		width:90%;
+		position:absolute;
+		top:700px;
+		right:0px;
+		background:gold url() 0 0 no-repeat;
+		text-align:center;
+		font-size:28px;
+		vertical-align:middle;
+	}
+	
+	
+
+	
+	
+
+  </style>
+
+	<? include "header.html" ?>
+
+ </head>
+
+ <body>
+	
+
+		<div id="content">	
+
+
+			<div id="top" class="center">
+			
+		<div id="lnb" >
+			<ul>
+				<li><a href="">G-Sports</a></li>
+				<li><a href="">시공안내</a></li>
+			</ul>
+		</div>
+
+			<h1>G-sports</h1>
+			
+
+			<div class="text">
+				
+			<h2>G-sports 소개</h2>
+				<p>관람문화에 그치지 않고 여가문화로
+				직접 체험하는 남녀 사회야구단의 활동이
+				증가하는 추세에  비해 국내 야구를 즐길수 있는
+				공간은 너무나 부족했습니다<br/>
+
+				오랜기간 설계노하우를 바탕으로 국민스포츠 
+				야구를 언제나 어디서나 즐길수있도록 <br/> 
+
+				최고의 즐거움을 선사하는 
+				Gsports의 제품으로 모던한디자인의 최신식
+				야구배팅시설을 시공해드리겠습니다!</p>
+			
+			</div>
+		<div class="video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/U0Bv9ZhD4dw" frameborder="0" allowfullscreen></iframe>
+					<p>youtube 소개영상</p>
+			</div>
+		</div>
+
+		<!-- #middle>h2>ul>(li*3>span*2)+figure+p -->
+
+		<div id="middle" class="center">
+			<h2>시설 공사시 알아야 할 점</h2>
+			<ul>
+				<li><span class="check">1</span>
+				<span> 전기 수급 ( 각 지역 한전에 신청해야 합니다 5kw~10kw)</span></li>
+				<li><span class="check">1</span>
+				<span>야구연습장은 계약일로부터 약 30~40일 소요됩니다 타석수에따라 15~20일 소요되는 경우도있습니다
+				</span></li>
+				<li><span class="check">1</span>
+				<span>모든 기계는 잔금이 입금완료된 후 가동됩니다</span></li>
+
+				<figure><img src="img/pc/sub_01/layout3.jpg" width="1908" height="1338" alt="도면" /></figure>
+
+				<p>설계도면 원본 이미지</p>
+
+			</ul>
+		</div><!-- middle -->
+		</div>
+		
+	<div id="bottom" class="center">
+		<ul>
+			<li><span class="icon"><img src="img/pc/sub_01/pc_sub_01_03.png" width="154" height="150" alt="icon1" />
+			</span ><span>최신식 시설</span></li>
+			<li><span class="icon"><img src="img/pc/sub_01/pc_sub_01_05.png" width="154" height="150" alt="icon2" />
+			</span ><span>최고의 재미</span></li>
+			<li><span class="icon"><img src="img/pc/sub_01/pc_sub_01_07.png" width="154" height="150" alt="icon3" />
+			</span ><span>간편한 운영관리</span></li>
+		</ul>
+	</div>
+
+	<div class="b_box center">
+			<div class="animate">
+				<ul>
+					<li>
+				<Strong Class="big_txt">G-SPORTS</Strong>
+				<span class="title">데이트코스이자 하나의 놀이문화인 야구배팅장 </br>
+				시공과 복합 놀이 공간을 제공하는 <span class="color_navy bold">G-sports</span>
+				</span>			
+				<div class="animate img">
+				<p class="comani"><img src="img/pc/sub_01/pc_sub_01_16.png" width="350" height="321" alt="monitor" /></p>			
+			    </div>
+				<p>현실감넘치는 Gsports 만의 설계 </br> 노하우로 심플하고 깔끔한 이미지의 시공</p>
+				<p>기존 시공사와 달리 저렴한 비용의 </br>창업을 느낄 수 있게 최적화한 인테리어</p>
+				<p>누구나 쉽게 접근할수있는</br> 놀이문화로 친근감 느낄수있도록</br> 캐릭터와 다양한 아이콘사용</p>
+				</li>
+					<li><Strong Class="big_txt">Funny</Strong>
+				<span Class="funnybox">
+				<p >
+					최고의 즐거움을 선사하는 </br>
+					Gsports의 제품</br>
+					모던한디자인의 최신식</br>
+					야구배팅시설 시공</br>
+					언제든 용이하게</br>
+					상담받을수있는 접근성좋은</br>
+					고객센터
+				</p></span>
+				</li>
+					<li>
+					
+				<Strong Class="big_txt">Simple</Strong>
+
+				<span class="simpleimg"><img src="img/pc/sub_01/pc_sub_01_19.png" width="264" height="396" alt="simple" /></span>
+
+				<span class="simplebox">another baseball game</span>
+					</li>
+				</ul>
+
+
+
+			</div>
+			
+				
+				
+
+
+		</div><!-- b_box -->
+
+	
+
+
+	
+
+ </body>
+
+  <? include "footer.html" ?>
+
+</html>

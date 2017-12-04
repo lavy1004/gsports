@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> g-sports_03 </title>
+  <meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="all"/>
+    <link rel="stylesheet" href="css/loader.css" />
+	<link rel="stylesheet" href="css/gsports_03.css" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/navi.js"></script>
+	<script type="text/javascript" src="js/slide_btn.js"></script>
+	    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet"/>
+		<link href="assets/css/demo.css" rel="stylesheet" />  
+		<link href="assets/css/gsdk.css" rel="stylesheet" />    
+	 <script type="text/javascript">
+  $(function(){ //jQuery 준비
+	
+	var cnt = 0; // 처음 이미지 번호 0~11 까지
+	var imgLen = 5; // 화면에 보여지는 사진 개수
+	var imgWidth = $('div.container > ul > li').width()+5;
+	var containWidth = $('div.container').width();
+	var maxSize = $('div.container > ul > li').length;  //li의 개수 구하는식 length는 길이를 뜻하는데 여기서 length가 li의 총길이를파악하나봅니다 총 12개입니다 이번li는
+	var moveX; // 이미지 이동 위치 값
+	
+
+	$('div.left').css({'opacity':'0.3',cursor:'default'});
+	$('div.right').click(function(){
+		if(cnt < maxSize - imgLen){
+			cnt++;
+		}
+		moveX = imgWidth * cnt * -1;
+
+		$('div.container > ul').stop().animate({
+			left:moveX
+		}, 400, 'easeOutCubic');
+	if(cnt ==  maxSize-imgLen){
+		$(this).css({'opacity':'0.3',cursor:'default'});
+	}else{
+		$(this).css({'opacity':'1',cursor:'pointer'});
+	}
+		$('div.left').css({'opacity':'1',cursor:'pointer'});
+	});
+
+	$('div.left').click(function(){
+		if(cnt > 0){
+			cnt--;
+		}
+		moveX = imgWidth * cnt * -1;
+
+		$('div.container > ul').stop().animate({
+			left:moveX
+		}, 400, 'easeOutCubic');
+
+		if(cnt == 0){
+		$(this).css({'opacity':'0.3',cursor:'default'});
+	}else{
+		$(this).css({'opacity':'1',cursor:'pointer'});
+	}
+		$('div.right').css({'opacity':'1',cursor:'pointer'});
+	});
+
+	//섬네일 이미지 클릭시 큰이미지 보여주기
+
+	$('div.container > ul > li').click(function(){
+		$('#image > p > img').attr('src',$(this).find('img').attr('src')).attr('alt',$(this).find('img').attr('alt'));
+	});
+
+		
+  }); //jQuery 종료
+  </script>
+
+
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	 <? include "header.html" ?>
+	<div id="bar">
+			<strong>게임이용 안내</strong>
+			<p>HOME > 게임소개</p>
+		</div>
+	<!-- #wrap>#banner>ul>(li>a[href="#"])*4 -->
+
+
+
+<div id="wrap_box" class="center" >
+		<div id="main_wrap">
+			
+			<div id="banner">
+				<ul>
+					<li><a href="#"><img src="img/pc/sub_03/game1.jpg" width="201" height="300" alt="game" /></a></li>
+					<li><a href="#"><img src="img/pc/sub_03/game2.jpg" width="201" height="300" alt="game" /></a></li>
+					<li><a href="#"><img src="img/pc/sub_03/game3.jpg" width="201" height="300" alt="game" /></a></li>
+					<li><a href="#"><img src="img/pc/sub_03/game4.jpg" width="201" height="300" alt="game" /></a></li>
+				</ul>
+			</div><!-- banner -->
+			<h2><img src="img/pc/sub_03/banner.jpg" width="860" height="288" alt="banner" /></h2>
+		</div><!-- main_wrap -->
+
+
+
+
+<div id="gallery">
+	<div id="image">
+		<p><img src="img/slide_img/wedding0.jpg" width="704" height="469" alt="웨딩홀0" /></p>
+	</div><!-- image -->
+	<div id="thumbnail">
+		<div class="left">
+		<span><img src="img/slide_img/btn_left.gif" width="13" height="25" alt="이전" />
+		</span>
+		</div>
+		<div class="container">
+			<ul>
+				<li>
+					<img src="img/slide_img/wedding0.jpg" width="704" height="469" alt="웨딩홀0" />	
+				</li>
+				<li>
+					<img src="img/slide_img/wedding1.jpg" width="704" height="469" alt="웨딩홀1" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding2.jpg" width="704" height="469" alt="웨딩홀2" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding3.jpg" width="704" height="469" alt="웨딩홀3" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding4.jpg" width="704" height="469" alt="웨딩홀4" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding5.jpg" width="704" height="469" alt="웨딩홀5" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding6.jpg" width="704" height="469" alt="웨딩홀6" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding7.jpg" width="704" height="469" alt="웨딩홀7" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding8.jpg" width="704" height="469" alt="웨딩홀8" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding9.jpg" width="704" height="469" alt="웨딩홀9" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding10.jpg" width="704" height="469" alt="웨딩홀10" />
+				</li>
+				<li>
+					<img src="img/slide_img/wedding11.jpg" width="704" height="469" alt="웨딩홀11" />
+				</li>
+
+			</ul>
+		</div>
+		<div class="right">
+		<span><img src="img/slide_img/btn_right.gif" width="13" height="25" alt="다음" /></span></div>
+	</div>
+</div><!-- gallery -->
+	
+
+
+
+	<h4>Q n A</h4>
+		
+
+		
+	<div id="loader-wrapper">
+		
+		<div id="loader">
+		</div>
+	</div>
+
+
+
+
+	<div class="qna">
+		<dl>
+			<dd class="qimg">
+			<img src="img/pc/sub_03/qna2.png" width="128" height="128" border="0" alt="qna">
+			</dd>
+			<dd class="qtxt">
+				Q. 다른 야구 게임과 경쟁력은 무엇인가요? <br>
+
+				A. 스트라이크 아웃은 투구와 it기술을 융합시켜실감나는 투구를 즐길수있는 스트레스 해소 게임입니다
+				자신의 투구 스피드와 재구력을 확인할 수 있고 남녀노소 누구나
+				쉽게 이용할수있는 최신식 스크린게임입니다.
+			</dd>
+		</dl>
+		<dl>
+			<dd class="qimg">
+			<img src="img/pc/sub_03/qna1.png" width="128" height="128" border="0" alt="qna">
+			</dd>
+			<dd class="qtxt">
+			    Q. 이용요금은 어떻게 되나요? <br>
+
+				A.고객 이용요금은 자유롭게 설정할 수 있습니다.
+				  상권에따라 자유로운 금액설정으로 간편한 운영이 가능합니다
+			</dd>
+		</dl>
+		<dl>
+			<dd class="qimg">
+			<img src="img/pc/sub_03/qna3.png" width="128" height="128" border="0" alt="qna">
+			</dd>
+			<dd class="qtxt">
+				Q. 별도 유지보수, 소모품 비용은 어떻게 되나요?<br>
+				
+				A.구매후 1년간은 별도 A/S비용이 들지안습니다
+				 1년 무상기간이 지난 후에 발생되는 유상 A/S 비용과 
+				 단, 야구공, 배팅볼, 빔프로젝트의 램프와같은 소모품은 관리비용이 발생할수 있습니다.
+			</dd>
+		</dl>
+		<dl>
+			<dd class="qimg">
+			<img src="img/pc/sub_03/qna4.png" width="128" height="128" border="0" alt="qna">
+			</dd>
+			<dd class="qtxt">
+				Q. 구매 문의 및 AS신청은 어떻게 해야하나요?<br>
+
+				A. 홈페이지 고객센터 게시판에 글을 남기시면 관리자가 확인후 
+				  유선 상담을 통해 문의하신 내용을 해결해 드립니다
+			</dd>
+			</dl>
+	</div>
+</div><!-- wrap_box -->
+<div id="bottom">
+	<figure>
+	<a href="http://lavy.dothome.co.kr/xe/qna">
+	<button class="btn btn-primary">온라인 구매/임대 문의 및 빠른답변 
+		고객센터 게시판 바로가기
+	</button>
+	</a>
+	</figure>
+</div>
+
+
+	<? include "footer.html" ?>
+ </body>
+  
+
+</html>
+
+

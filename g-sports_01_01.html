@@ -3,156 +3,20 @@
  <head>
   <title> g-sports_01_01 </title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no">
    <link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
-   
-  <style type="text/css">
-	
-	
-	#lnb{
-		overflow:hidden;
-	}
+   <link rel="stylesheet" type="text/css" href="css/gsports_01_01.css" media="all" />
+   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+   <script type="text/javascript" src="js/navi.js"></script>
+	<script type="text/javascript" src="js/slide_img.js"></script>
+  <script type="text/javascript">
 
-	#lnb ul{
-		float:right;
-		margin:20px 0 20px;
-	}
-	#lnb ul li{
-		float:left;
-	}
-	#lnb ul li a{
-	display:block;
-	padding:3px 8px;
-	color:#333;
-	font-weight:bold;
-	border-right:1px solid #ccc;
-	}
+  $(function(){ //jquery 준비 
+  });//jquery 종료
 
-	#lnb ul li:last-child a{
-	border-right:none;
-	}
-
-	#lnb ul li a:hover{
-		color:#bbb;
-	}
-	#top{
-		overflow:hidden;
-	}
-	#top figure{
-		border:none;
-	}
-	span{
-		float:left;		
-	}
-	
-	span.call{
-		display:block;
-		padding:100px;
-	}
-
-	h4{
-		color:#54c2c5;
-		font-size:50px;
-		text-align:center;
-		padding:50px;
-	}
-	#bottom{
-	border:1px solid red;
-	}
-
-	#bottom ul li{
-		float:left;
-		width:50%;
-		background:green url() 0 0 no-repeat;
-	}
-
-	/* gallery  */
-
-#gallery{
-	float:right;
-	width:49%;
-	background-color:#333;
-	height:450px;
-}
-
-h4.up{
-	margin:10px 0 20px 20px;
-	}
-
-#gallery_box{
-	height:270px;
-	overflow:hidden;
-	background:url() 0 0 ;
-}
-
-#gallery_box > ul{
-	position:relative;
-	height:270px;
-}
-#gallery_box > ul > li{
-	position:absolute;
-	width:100%;
-	left:-100%;
-}
-
-#gallery_box > ul > li:nth-child(1){
-	left:0;
-}
-
-.pic1{
-	width:300px;
-	height:260px;
-	background:#fff;
-	border-radius:5px;
-	float:left;
-	margin:0 70px 0 20px;
-}
-
-.pic1 ul li{
-	overflow:hidden;
-}
-.pic1 ul li:nth-child(1){
-	text-align:center;
-	margin-top:10px;
-}
-.pic1 ul li:nth-child(1) a{
-	display:block;
-	height:170px;
-	overflow:hidden;
-}
-
-
-.pic1 ul li:nth-child(1) img{
-	width:85%;
-	height:auto;
-}
-.pic1 ul li:nth-child(2) span{
-	float:left;
-	margin:27px 30px;
-	font-size:14px;
-}
-
-.pic1 ul li:nth-child(2) a{
-	float:right;
-	margin-top:15px;
-}
-.pic2{
-	float:left;
-	width:220px;
-	height:200px;
-	margin:30px 0 0 15px;
-	text-align:center;
-	background:#fff;
-}
-.pic2 span img{
-	width:90%;
-	height:auto;
-}
-#gallery_box > ul > li:nth-child(2) .pic2 span img{
-	margin-top:15px;
-}
-#gallery_box > ul > li:nth-child(3) .pic2 span img{
-	margin-top:15px;
-}
+</script>
+	<style type="text/css">
+			
 
   </style>
  </head>
@@ -160,20 +24,53 @@ h4.up{
  <body>
 <? include "header.html" ?>
 	
+
+	<div id="5_wrap">
+		<div id="bar">
+			<strong> 시공안내 </strong>
+			<p>Gsports > 시공안내</p>
+		</div>
+
+
 	<div id="content" class="center">
 		<div id="lnb" >
 			<ul>
-				<li><a href="">G-Sports</a></li>
-				<li><a href="">시공안내</a></li>
+				<li><a href="g-sports_01.html">G-Sports</a></li>
+				<li><a href="g-sports_01_01.html">시공안내</a></li>
 			</ul>
 		</div>
 <!-- 
 	#top>h4+figure+span*2>a[href="#"] -->
 
 	
+	<div id="m_bg">
+		<div class="center table">
+			<div class="animate fadeInUp">
+
+				<p>
+
+				설계부터 시공까지 창업주 여러분께 <br>
+
+				신뢰받는 Gsports 가 되도록 <br>
+
+				전직원이 노력할 것을 약속드립니다 <br>
+
+				귀하의 귀중한 사업기획 <br>
+				
+				오랜 경험을통한 안정적인 진행의<br>
+
+				<strong>G-sports 노하우와 함께합니다</strong>
+				
+				</p>
+				
+			</div>
+		</div>
+		
+	</div>
+
 	<div id="top">
 
-		<h4>전국 시공 시설안내</h4>
+		
 		<figure><img src="img/pc/sub_01/pc_sub_01_01_03.jpg" width="1400" height="524" alt="야구장" /></figure>
 		<span><a href="#"><img src="img/pc/sub_01/pc_sub_01_01_06.png" width="728" height="150" alt="문의" /></a></span>
 		<span class="call"><a href="#">050 6445 6445</a></span>
@@ -181,45 +78,64 @@ h4.up{
 
 
 	<div id="bottom">
-		<ul>
-			<li>	
-					<div class="pic1">
+		  <div id="main_wrap">
+				  	 <div id="main_img">
 							<ul>
-								<li><a href="#"><img src="img/pc/sub_01/pc_main_13.png" width="361" height="306" alt="순천" /></a></li>
-								<li><span>순천시설사진</span><a href="#" class="button"><img src="img/pc/main/main_p/button.png" alt="button" /></a></li>
+							<li  id="web_pick" class="v_0">
+								<ul>
+									<li class="no1">
+									<a href="#"><img src="img/pc/sub_01/045.JPG" width="3264" height="2448" border="0" alt="">
+									</a>
+									</li>
+									<li class="no2"><a href="#"><img src="img/pc/sub_01/045.JPG" width="3264" height="2448" border="0" alt=""></a></li>
+									<li class="no3"><a href="#"><img src="img/pc/sub_01/045.JPG" width="3264" height="2448" border="0" alt=""></a></li>
+									<li class="no4"><a href="#"><img src="img/pc/sub_01/045.JPG" width="3264" height="2448" border="0" alt=""></a></li>
+								</ul>
+							</li>	 <!-- v_0 -->
+								<li id="web_pick" class="v_1">
+								<ul>
+									<li class="no1">
+									<a href="#">
+									<img src="img/pc/sub_01/046.JPG" width="3264" height="2448" border="0" alt="">
+									</a>
+									</li>
+									<li class="no2"><a href="#"><img src="img/pc/sub_01/046.JPG" width="3264" height="2448" border="0" alt=""></a></li>
+									<li class="no3"><a href="#"><img src="img/pc/sub_01/046.JPG" width="3264" height="2448" border="0" alt=""></a></li>
+									<li class="no4"><a href="#"><img src="img/pc/sub_01/046.JPG" width="3264" height="2448" border="0" alt=""></a></li>
+								</ul>
+				
+							</li>	 <!-- v_1 -->
+
+							<li id="web_pick" class="v_2">
+								<ul>
+									<li class="no1">
+									<a href="#">
+									<img src="img/pc/sub_01/047.JPG" width="3264" height="2448" border="0" alt="">
+									</a>
+									</li>
+									<li class="no2"><a href="#"><img src="img/pc/sub_01/047.JPG" width="3264" height="2448" border="0" alt=""></a></li>
+									<li class="no3"><a href="#"><img src="img/pc/sub_01/047.JPG" width="3264" height="2448" border="0" alt=""></a></li>
+									<li class="no4"><a href="#"><img src="img/pc/sub_01/047.JPG" width="3264" height="2448" border="0" alt=""></a></li>
+								</ul>
+				
+							</li>	 <!-- v_2 -->
 							</ul>
-					</div>
-			</li>
-			<li>
-				<div class="pic1">
-								<ul>
-								<li><a href="#"><img src="img/pc/sub_01/pc_main_1.JPG" width="1024" height="576" alt="경주" /></a></li>
-								<li><span>경주시설사진</span><a href="#" class="button">
-								<img src="img/pc/main/main_p/button.png" alt="button" /></a></li>
-								</ul>
-				</div>
-			</li>
-			<li>
-				<div class="pic1">
-								<ul>
-								<li><a href="#"><img src="img/pc/sub_01/gallery_03.png" width="500" height="375" alt="스크린랜드" /></a></li>
-								<li><span>스크린스포츠랜드</span><a href="#" class="button"><img src="img/pc/main/main_p/button.png" alt="button" /></a></li>
-								</ul>
-				</div>
+						<div id="prev"><img src="img/pc/sub_01/prev.png" width="48" height="48" alt="prev" /></div>
+					 <div id="next"><img src="img/pc/sub_01/next.png" width="48" height="48" alt="next" /></div>
+					 
 							
-			</li>
-			<li>
-				<div class="pic1">
-								<ul>
-								<li><a href="#"><img src="img/pc/sub_01/gallery_03.png" width="500" height="375" alt="스크린랜드" /></a></li>
-								<li><span>공사 준비중</span><a href="#" class="button"><img src="img/pc/main/main_p/button.png" alt="button" /></a></li>
-								</ul>
-				</div>
+						 </div><!-- main_img -->
+						
+							<ul  id="list_btn">
+								<li class="on"><a href="#"><img src="img/pc/sub_01/pc_sub_01_23.png" width="32" height="32" border="0" alt=""></a></li>
+								<li><a href="#"><img src="img/pc/sub_01/pc_sub_01_28.png" width="32" height="32" border="0" alt=""></a></li>
+								<li><a href="#"><img src="img/pc/sub_01/pc_sub_01_33.png" width="32" height="32" border="0" alt=""></a></li>
+
+							</ul><!-- list_btn -->
 							
-			</li>
-			<span></span><!-- 더보기용 -->
-		</ul>
-	</div>
+					</div><!-- main_wrap -->
+		
+	</div><!-- bottom -->
 
 
 
